@@ -1,5 +1,6 @@
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import axios from "axios";
+import React from "react";
 import { useState } from "react";
 
 function App() {
@@ -47,18 +48,18 @@ function App() {
 
   return (
     <>
-      <div className="flex gap-4 m-10 justify-center">
+      <div className="flex gap-4 m-10 md:flex-row flex-col md:justify-center items-center">
         <input
           onChange={(e) => setCountry(e.target.value)}
           value={country}
           type="text"
-          className="bg-transparent border-2 rounded-md border-[#7C1034] text-white p-1"
+          className="bg-transparent border-2 rounded-md border-[#7C1034] text-white p-1 md:w-[25%] w-[90%]"
           placeholder="İlçe Giriniz"
         />
 
         <button
           onClick={handleClick}
-          className="border-2 rounded-md border-[#7C1034] text-white p-1"
+          className="border-2 rounded-md border-[#7C1034] text-white p-1 md:w-[5%] w-[25%]"
         >
           Gör
         </button>
