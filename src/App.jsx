@@ -46,7 +46,7 @@ function App() {
     return words.join(" ");
   }
 
-  return (
+   return (
     <>
       <div className="flex gap-4 m-10 md:flex-row flex-col md:justify-center items-center">
         <input
@@ -54,7 +54,7 @@ function App() {
           value={country}
           type="text"
           className="bg-transparent border-2 rounded-md border-[#7C1034] text-white p-1 md:w-[25%] w-[90%]"
-          placeholder="İlçe Giriniz"
+          placeholder="Şehir Giriniz"
         />
 
         <button
